@@ -1,0 +1,170 @@
+<!-- By: Jason You 
+  Student #: 300056239
+Lab 8, SEG 3125-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+  
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <title>Lab 8 SEG 3125</title>
+   <link href="style.css" rel="stylesheet" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>  
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
+   <div id="root"></div>
+    <h1>
+      <center>
+        <img src="Apple.jpg" alt="Apple Clipart" style="width:100;height:100px;">
+      </center>
+      <center>
+      Delightful Math Tutors
+    </center></h1>
+    <h4><i>
+      <center>
+        Striving to Provide Quality Education
+      </center>
+    </i></h4>
+
+    <!-- Tab links, each one with an onclick event associated with it -->
+  <div class="tab">
+    <button class="tablinks active" onclick="openInfo(event, 'About')">About</button>
+    <button class="tablinks" onclick="openInfo(event, 'Tutors')">Tutors</button>
+    <button class="tablinks" onclick="openInfo(event, 'Lessons')">Math Lessons</button>
+    <button class="tablinks" onclick="openInfo(event, 'Appointments')">Appointments</button>
+  </div>
+
+    
+  </head>
+  <body>
+    
+    
+  <div id="About" class="tabcontent" style="display:block">
+<center>
+	<h2>Welcome to the Official Website for Magnificient Math tutors!</h2>
+  <p> Since 1997, we have been striving to provide top class education to students around the world. <br>
+    On this website, you can book appointments, purchase course material, or ask questions below! If you have any <br>
+    additional questions, please don't hesitate to email awesometutors@magnificenttutor.org or call us at <br>
+    611-111-0000! <p>
+    <div>
+      <img src="classroom.jpg" alt="Apple Clipart" style="width:500;height:300px;">
+    </div>
+   <div style="font-family:verdana">
+    <b>Additional Comments:</b><br>
+<br>
+<textarea name="comment[body]" rows="10" cols="50" wrap="physical" id="comment_text_area"></textarea>
+<br>
+  Do you require additional assistance?: <br>
+  <div class="buttons">
+    <button class="yes">Yes</button>
+    <button class="no">No</button> <br>
+  </div>
+  <br>
+</form>
+<div class="buttons">
+  <button class="submit">Submit</button>
+</div>
+ 
+  </div>
+</center>
+	
+</div>
+
+<!-- Tab content -->
+<div id="Tutors" class="tabcontent"  style="display:none">
+<center>
+  <div class="container p-3" id="staff">
+    <h2>Our Staff</h2>
+    <p>Please select your preferred stylist(s)</p>
+    <div class="card-columns">
+        <div class="card bg-danger" style="width:200px">
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"> <img class="card-img-top" src="amanda.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Amanda</h4>
+                <p class="card-text">Hair Stylist&Consultant</p>
+                <!-- collapsible part -->
+                <a href="#profile1" class="btn btn-primary" data-toggle="collapse">About Amanda</a>
+                <div id="profile1" class="collapse p-2">
+                    <p>Amanda is a 15 year veteran who obtained a degree in hair styling from Algonquin College.
+                    She is the main hair stylist&consultant.</p>
+                </div>
+            </div>
+        </div>    
+        <div class="card bg-danger2" style="width:200px">
+            <input type="checkbox" id="myCheckbox2" />
+            <label for="myCheckbox2"><img class="card-img-top" src="justin.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Justin</h4>
+                <p class="card-text">Men's Hair Stylist & Consultant</p>
+                <!-- collapsible part -->
+                <a href="#profile2" class="btn btn-primary" data-toggle="collapse">About Justin</a>
+                <div id="profile2" class="collapse p-3">
+                    <p>Justin has been cutting and styling hair for 5 years. He cuts men's hair and provides consulting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</center>
+</div>
+
+<div id="Lessons" class="tabcontent" style="display:none">
+  <div>
+    <center>
+    <h3>Which Math Package would you like to purchase?</h3>
+  </center>
+  </div>
+
+    <center>
+      <form name="lessons" method="POST">
+        <div style="font-family:verdana">
+          Please select items you would like to purchase: <br>
+          <input type="radio"  name="lessons" value="basic">Basic Algebra Course Pack ($50)<br>
+      
+        <input type="radio" name="lessons" value="intermediate">Intermediate Algebra Course Pack ($60)<br>
+      
+        <input type="radio" name="lessons" value="advanced">Advanced Algebra Course Pack ($70)<br>
+      
+        <input type="radio"  name="lessons" value="geometry">Geometry ($55)<br>
+        </div>
+      </form>
+      <div class="buttons">
+        <button class="submit">Proceed</button>
+      </div>
+    </center>
+
+</div>
+
+<div id="Appointments" class="tabcontent" style="display:none">
+<center>
+  <h3>Checkout</h3>
+  <p>Here are your selected Grocery Items:</p>
+	</center>
+</div>
+
+    <footer>
+      <center>
+      <i>
+      Website Designed By: Jason You <br>
+      Student #: 300056239
+      </i>
+      </center>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
