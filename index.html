@@ -88,32 +88,32 @@ Lab 8, SEG 3125-->
 <center>
   <div class="container p-3" id="staff">
     <h2>Our Staff</h2>
-    <p>Please select your preferred stylist(s)</p>
+    <p>Please select your preferred tutor(s)</p>
     <div class="card-columns">
         <div class="card bg-danger" style="width:200px">
             <input type="checkbox" id="myCheckbox1" />
-            <label for="myCheckbox1"> <img class="card-img-top" src="amanda.png" alt="Card image" style="width:100%">
+            <label for="myCheckbox1"> <img class="card-img-top" src="Jessica.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-                <h4 class="card-title">Amanda</h4>
-                <p class="card-text">Hair Stylist&Consultant</p>
+                <h4 class="card-title">Jessica</h4>
+                <p class="card-text">Advanced and Geometry Tutor</p>
                 <!-- collapsible part -->
-                <a href="#profile1" class="btn btn-primary" data-toggle="collapse">About Amanda</a>
+                <a href="#profile1" class="btn btn-primary" data-toggle="collapse">About Jessica</a>
                 <div id="profile1" class="collapse p-2">
-                    <p>Amanda is a 15 year veteran who obtained a degree in hair styling from Algonquin College.
-                    She is the main hair stylist&consultant.</p>
+                    <p>Jessica is a 15 year veteran who obtained a degree in Mathematics from the University of Waterloo.
+                    She is the main advanced math tutor.</p>
                 </div>
             </div>
         </div>    
         <div class="card bg-danger2" style="width:200px">
             <input type="checkbox" id="myCheckbox2" />
-            <label for="myCheckbox2"><img class="card-img-top" src="justin.jpg" alt="Card image" style="width:100%">
+            <label for="myCheckbox2"><img class="card-img-top" src="Jackson.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-                <h4 class="card-title">Justin</h4>
-                <p class="card-text">Men's Hair Stylist & Consultant</p>
+                <h4 class="card-title">Jackson</h4>
+                <p class="card-text">Basic and Intermediate Math Tutor</p>
                 <!-- collapsible part -->
-                <a href="#profile2" class="btn btn-primary" data-toggle="collapse">About Justin</a>
+                <a href="#profile2" class="btn btn-primary" data-toggle="collapse">About Jackson</a>
                 <div id="profile2" class="collapse p-3">
-                    <p>Justin has been cutting and styling hair for 5 years. He cuts men's hair and provides consulting.</p>
+                    <p>Justin has been teaching basic and intermediate mathematics for 5 years. He also provides consulting.</p>
                 </div>
             </div>
         </div>
@@ -151,8 +151,17 @@ Lab 8, SEG 3125-->
 
 <div id="Appointments" class="tabcontent" style="display:none">
 <center>
-  <h3>Checkout</h3>
-  <p>Here are your selected Grocery Items:</p>
+  <h3>Appointments</h3>
+  <p>Please select an appointment time: </p>
+  <div class="form-group row">
+    <label for="dateTimeInput" class="col-2 col-form-label">Appointment Scheduling</label>
+    <div class="col-10">
+        <input class="form-control" type="datetime-local" id="dateTimeInput" required>
+    </div>
+</div>
+ <div class="buttons">
+     <button class="submit">Submit</button>
+ </div>
 	</center>
 </div>
 
